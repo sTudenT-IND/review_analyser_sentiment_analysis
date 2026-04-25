@@ -3,8 +3,8 @@ import streamlit as st
 import pickle
 
 # Load model
-classifier = pickle.load(open('naivebayes.pickle', 'rb'))
-word_features = pickle.load(open('word_features.pickle', 'rb'))
+classifier = pickle.load(open('originalnaivebayes5k.pickle', 'rb'))
+word_features = pickle.load(open('word_features5k.pickle', 'rb'))
 
 # Feature extraction
 def find_features(document):
